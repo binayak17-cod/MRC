@@ -1,0 +1,226 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #004d40;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.logo {
+  color: #a7ffeb;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+
+nav {
+  float: right;
+}
+
+.nav-link {
+  color: #a7ffeb;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main */
+main {
+  flex-grow: 1;
+  padding: 2rem 0;
+}
+
+h2 {
+  color: #004d40;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Add Entry Section */
+
+.add-entry {
+  background-color: #ffffff;
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-entry h3 {
+  margin-bottom: 1rem;
+  color: #004d40;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #004d40;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #004d40;
+  color: #e0f2f1;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #00281a;
+}
+
+/* History List */
+
+.history-list {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.history-list h3 {
+  margin-bottom: 1rem;
+  color: #004d40;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #00796b;
+  color: #e0f2f1;
+}
+
+th, td {
+  text-align: left;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+tbody tr:hover {
+  background-color: #f1f7f6;
+}
+
+.actions-btns button {
+  background-color: transparent;
+  border: none;
+  color: #00796b;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.actions-btns button:hover {
+  color: #004d40;
+}
+
+/* Footer */
+footer {
+  background-color: #e0f2f1;
+  color: #004d40;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.actions-btns button {
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #00796b;
+}
+.actions-btns button:hover {
+  color: #004d40;
+}
