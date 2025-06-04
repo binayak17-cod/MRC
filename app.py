@@ -149,5 +149,18 @@ def get_disease_details():
         print("❌ Error in /api/details:", e)
         return jsonify({"error": "Failed to retrieve details."}), 500
 
+@app.route("/api/suggestions", methods=["GET"])
+def suggest_symptoms():
+    try:
+        query = request.args.get("q", "").strip().lower()
+        if not query:
+            return jsonify([])
+        matches = [s for s in known_symptoms if query in s]
+        return jsonify(matches[:10])
+    except Exception as e:
+        print("❌ Suggestion error:", e)
+        return jsonify([]), 500
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
