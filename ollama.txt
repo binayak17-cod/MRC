@@ -1,0 +1,8 @@
+npm install
+npm start
+node server.js
+ollama --version(cmd)
+ollama pull mistral(cmd)
+Now go back to your project folder and run:npm start
+Re-run Your Server
+Once the model is pulled, go back to your project folder and run:npm start
